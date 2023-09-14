@@ -22,6 +22,23 @@ app.get('/tico', (req, res) => {
   res.send('Teco')
 })
 
+const pokemon = [ {id: 1, name: 'Picachu'},
+                  {id: 2, name: 'Bulbasaur'},
+                  {id: 3, name: 'Ivysaur',},
+                  {id: 4, name: 'Venusaur'},
+                  {id: 5, name: 'Charmander'},
+                  {id: 6, name: 'Charizard'},
+                  {id: 7, name: 'Squirtle'},
+                  {id: 8, name: 'Wartortle'},
+                  {id: 9, name: 'Miraidon'},
+                  {id: 10, name: 'PCharmeleon'}]
+
+app.get('/pokemon', (req, res) => {
+console.log(" eu sou o Tico")
+res.json(pokemon)
+})
+
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
