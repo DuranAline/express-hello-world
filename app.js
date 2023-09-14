@@ -34,10 +34,18 @@ const pokemon = [ {id: 1, name: 'Picachu'},
                   {id: 10, name: 'PCharmeleon'}]
 
 app.get('/pokemon', (req, res) => {
-console.log(" eu sou o Tico")
+console.log(" lista pokemon")
 res.json(pokemon)
 })
 
+const serie = [{id: 1, name: 'Only Murders In The Building'},
+               { id: 2, name: 'The Guest'},
+               {id: 3, name: 'Ted Lasso'}]
+
+app.post('/serie', (req, res) => {
+console.log(" series preferidas")
+res.json(serie)
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
